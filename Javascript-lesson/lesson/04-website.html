@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>website</title>
+
+    <link rel="stylesheet" href="../../website.css">
+    <script src="04-website.js" type="text/javascript"> </script>
+
+</head>
+<body>
+
+
+<!--add  +4 and +5 button-->
+<button onclick="
+
+        console.log(`Cart Quantity: ${cartQuantity} `);
+
+                ">Show Quantity</button>
+
+<button onclick="
+
+        // cartQuantity = cartQuantity + 1;
+        cartQuantity += 1;
+        console.log(`Cart Quantity: ${cartQuantity} `);
+
+                ">Add to Cart</button>
+
+<button onclick="
+        // cartQuantity = cartQuantity + 2;
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity} `);
+
+                ">+2</button>
+
+<button onclick="
+        // cartQuantity = cartQuantity + 3;
+        cartQuantity += 3;
+        console.log(`Cart Quantity: ${cartQuantity} `);
+
+                ">+3</button>
+
+<button onclick="
+
+        cartQuantity = 0;
+        console.log(`Cart Reset ! `);
+
+                ">Reset Cart</button>
+
+
+
+
+
+
+
+
+</body>
+</html>
