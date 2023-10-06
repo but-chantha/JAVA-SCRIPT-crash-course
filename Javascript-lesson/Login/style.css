@@ -1,24 +1,8 @@
 body{
-    background-image: url("/p01.jpg");
-    background-attachment: fixed;
+    background-image: url("/Javascript-lesson/Login/p01.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     font-family: sans-serif;
-
-}
-
-.layout{
-    height: 600px;
-    width: 600px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
 }
 
@@ -35,12 +19,12 @@ body{
     justify-content: center;
     align-items: center;
     /*overflow: hidden;*/
-    transition: height .2s ease;
+    transition: height 0.2s ease-out;
 
 }
 
 .wrapper.active {
-    height: 520px ;
+    height: 700px ;
 }
 
 
@@ -49,14 +33,18 @@ body{
     padding: 40px;
 }
 
-.wrapper .form-work.login{
+.wrapper .form-box.login{
     /*display: none;*/
 }
 
-.wrapper .form-work.register{
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
 
+.wrapper .form-box.register{
     position: absolute;
-    transform: translateX(400px);
+    transform: translateX(500px);
 
 }
 
@@ -77,13 +65,13 @@ body{
 
 }
 
-.form-work{
+.form-box{
     width: 100%;
     padding: 40px;
 
 }
 
-.form-work h3 {
+.form-box h3 {
     font-size: 2em;
     color: #424040;
     text-align: center;
@@ -129,7 +117,6 @@ body{
 
 
 }
-
 
 .input-box .icon{
     position: absolute;
