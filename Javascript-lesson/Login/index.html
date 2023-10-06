@@ -47,23 +47,21 @@
 
             <div class="login-register">
                 <p>Don't have an account?
-                    <a href="#"
-                       class="register-link">Register
-                    </a>
+                    <a href="#" class="register-link">Register</a>
                 </p>
             </div>
 
         </form>
     </div>
 
+
+
     <div class="form-box register">
         <h3>Registration</h3>
         <form action="#">
 
             <div class="input-box">
-                <span class="icon">
-                    <i class="fa-solid fa-user"></i>
-                </span>
+                <span class="icon"><i class="fa-solid fa-user"></i></span>
                 <input type="text" required>
                 <label>Username</label>
             </div>
@@ -81,18 +79,14 @@
             </div>
 
             <div class="remember-forgot">
-                <label><input type="checkbox">
-                    I am agree to the terms & conditions
-                </label>
+                <label><input type="checkbox">I am agree to the terms & conditions</label>
             </div>
 
             <button type="submit" class="btn">Register</button>
 
             <div class="login-register">
                 <p>Already have an Account?
-                    <a href="#"
-                       class="login-link">Login
-                    </a>
+                    <a href="#" class="login-link">Login</a>
                 </p>
             </div>
 
@@ -102,6 +96,21 @@
 </div>
 
 
+<script>
+
+    const wrapper = document.querySelector(`.wrapper`);
+    const loginLink = document.querySelector(`.login-link`);
+    const registerLink = document.querySelector('.register-link');
+
+    registerLink.addEventListener(`click`, () => {
+        wrapper.classList.add(`active`);
+    });
+    loginLink.addEventListener(`click`, () => {
+        wrapper.classList.remove(`active`);
+    });
+
+
+</script>
 
 
 </body>
