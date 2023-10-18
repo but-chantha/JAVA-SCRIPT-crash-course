@@ -1,6 +1,8 @@
 // const randomNumber = Math.random();
 let computerMove = ``;
-//
+let result = ``;
+
+
 // if (randomNumber >= 0 && randomNumber < 1/3 )
 // {
 //     computerMove = `rock`;

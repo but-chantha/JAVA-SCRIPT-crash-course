@@ -32,8 +32,10 @@ body{
     transition: transform 0.5s;
 
 }
-
-
+.wrapper{
+    transform: scale(0);
+    transition: transform 0.25s;
+}
 
 
 form {
@@ -85,6 +87,7 @@ form {
     border-bottom-left-radius: 20px;
     cursor: pointer;
     z-index: 1;
+
 
 }
 
