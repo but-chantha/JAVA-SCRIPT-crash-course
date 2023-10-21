@@ -3,6 +3,7 @@ let computerMove = ``;
 let result = ``;
 
 
+
 // if (randomNumber >= 0 && randomNumber < 1/3 )
 // {
 //     computerMove = `rock`;
@@ -17,3 +18,4 @@ let result = ``;
 // }
 
 // computerMove |> console.log |> alert;
+

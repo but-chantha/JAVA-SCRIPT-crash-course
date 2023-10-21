@@ -1,6 +1,6 @@
 console.log( 3 < 5 );
 
-console.log('5.00' === 5);
+console.log(5.00 === 5);
 
 if (!true) {
     console.log('else');
@@ -73,10 +73,12 @@ if (variable)
 
 //shortcut for if statement
 // Ternary Operator
-const  result = true ? `truthy` : `falsy`;
+
+const  result = !true ? `falsy` : `truthy`;
 console.log(result);
 const result1 = false? ` truthy ` : `falsy`;
 console.log(result1);
+
 
 let result2;
 if (3) {
@@ -86,8 +88,7 @@ if (3) {
 }
 console.log(result2);
 
-// And Operator &&
-true && console.log(`hello`);
+//  true && console.log(`hello`);
 
 const message = true && `hello`;
 console.log(message);
@@ -100,7 +101,7 @@ console.log(message1);
 
 
 // OR Operator ||
-const currency = undefined || `USD` ;
+const currency = 'EUR' || `USD` ;
 console.log(currency);
 
 
