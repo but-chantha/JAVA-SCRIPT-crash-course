@@ -1,8 +1,9 @@
 
-const randomNumber = Math.random();//Global Variables
-
-let computerMove = ``;
 function pickComputerMove(){
+
+    const randomNumber = Math.random();//Global Variables
+
+    let computerMove = ``;
 
     if (randomNumber >= 0 && randomNumber < 1/3 )
     {
@@ -17,9 +18,15 @@ function pickComputerMove(){
         computerMove = `scissors`;
     }
 
-    return ;
-
+    return computerMove;
 
 }
 
-pickComputerMove();
+
+
+
+
+
+
+
+
