@@ -6,3 +6,12 @@ function function1()
 
 function1();
 function1();
+
+
+function sayHi()
+{
+    return 0;
+    console.log('hi');
+
+}
+sayHi();
